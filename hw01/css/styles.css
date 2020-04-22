@@ -1,0 +1,163 @@
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*Import Fonts for each weight*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand&display=swap');
+
+body {
+   color: #D3C4E3;
+   background-color: #FAD8D6;
+   margin: 100px;
+   padding: 0;
+   font-family: 'Indie Flower', sans-serif;
+   font-size: 15px;
+   line-height: 1.5;
+/*    font-size: 1.3em; */
+}
+img {
+  color: white;
+}
+a {
+  text-decoration: none;
+  margin: 10px;
+  color: navy;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 10px;
+   color: black;
+   font-family: 'Quicksand', sans-serif;
+   text-transform: uppercase;
+   font-size:  5em;
+}
+
+h2{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 100;
+  color: #8F95D3;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.0;
+}
+
+h3{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 100;
+  color: black;
+  font-family: 'Quicksand', monospace;
+  text-transform: uppercase;
+  font-size: 2.0;
+}
+
+h4{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 100;
+  color: black;
+  font-family: 'Quicksand', san-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+header {
+  margin-left: 100px;
+  margin-right: 100px;
+  background: #F7F4F3;
+  color: #F7FFF7;
+  border: outset;
+  border-width: thick;
+}
+header .btn {
+  color: #192A51;
+  background: #FFDBB5;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+p{
+  color: black;
+  margin: 10px;
+}
+
+.projects {
+  margin-top: 10px;
+  background: #E0B7B7;
+}
+.projects .btn {
+  color: #192A51;
+  background: #FFDBB5;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.work {
+  margin-top: 10px;
+  background: #E0B7B7;
+}
+
+.work .btn {
+  color: #192A51;
+  background: #FFDBB5;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+li {
+  color: black;
+}
+
+.education {
+  margin-top: 10px;
+  background: #E0B7B7;
+
+}
+
+footer {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: #F7F4F3;
+  color: #F7FFF7;
+  border: outset;
+  border-width: thick;
+}
+footer .btn {
+  color: #192A51;
+  background: #FFDBB5;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.contact {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media screen and (min-width:750px){
+  footer {
+    text-align: center;
+  }
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+}
