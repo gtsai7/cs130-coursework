@@ -1,0 +1,89 @@
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 2fr 10fr 10fr;
+   grid-template-areas:
+      "menu . nav nav"
+      "box1 box2 box3 feed"
+      "primary primary primary feed";
+   min-height: 100vh;
+   row-gap: 10px;
+   column-gap: 10px;
+}
+
+article, aside, section, main {
+  border: solid 1px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu1 {
+  grid-area: menu;
+  background: pink;
+}
+
+.menu2 {
+  grid-area: nav;
+  background: teal;
+}
+
+.card1 {
+  grid-area: box1;
+}
+
+.card2 {
+  grid-area: box2;
+}
+
+.card3 {
+  grid-area: box3;
+}
+
+.main {
+  grid-area: primary;
+}
+
+.aside {
+  grid-area: feed;
+}
+
+@media (max-width: 1024px) {
+   /* tablet layout here */
+   .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 3fr 10fr 7fr 7fr;
+      grid-template-areas:
+         "menu nav"
+         "feed feed"
+         "box1 box2"
+         "box3 box3"
+         "primary primary";
+      min-height: 100vh;
+      row-gap: 10px;
+      column-gap: 10px;
+   }
+}
+
+@media (max-width: 700px) {
+   /* tablet layout here */
+   .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 3fr 7fr 7fr 7fr 7fr;
+      grid-template-areas:
+         "menu ."
+         "nav nav"
+         "box1 box1"
+         "box2 box2"
+         "box3 box3"
+         "primary primary";
+      min-height: 100vh;
+      row-gap: 10px;
+      column-gap: 10px;
+   }
+   .aside {
+     display: none;
+   }
+}
