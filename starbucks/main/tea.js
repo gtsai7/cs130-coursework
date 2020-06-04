@@ -3,6 +3,7 @@ url =
 "https://s3-us-west-2.amazonaws.com/s.cdpn.io/316753/starbucks.json";
 
 makeCard = (product) => {
+  //test
   let imageURL = product.assets.thumbnail.large.uri;
   if (!imageURL) {
     imageURL = product.assets.masterImage.uri;
