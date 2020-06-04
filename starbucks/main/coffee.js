@@ -133,7 +133,7 @@ filter = (ev) => {
   let checked = ev.target.checked;
   console.log(ev.target.value);
   console.log(document.querySelectorAll(ev.target.value));
-  if (ev.target.value.includes("Coffees") && !ev.target.value.includes("Americano") && ev.target.value.includes("Iced")) {
+  if (ev.target.value === ".Iced.Coffees") {
     console.log(ev.target.value);
      if (checked) {
       document.querySelectorAll(ev.target.value)[2].style.display = 'flex';
