@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <title>At Home Coffee: Starbucks Coffee Company</title>
+     <link rel="stylesheet" href="athome.css">
+     <script type="text/javascript" src="athome.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+
+<body>
+  <!-- FIND A STORE -->
+  <div class="find">
+        <h1>
+            <i class="fas fa-map-marker-alt"></i>
+            <!-- Pin Icon: From Font Awesome Icon -->
+            Find a store
+        </h1>
+  </div>
+
+    <!-- NAVIGATION BAR -->
+  <div class='navtop'>
+      <nav>
+        <img src="../pictures/logo.png" alt="Starbucks Logo">
+        <a id='menu' href="menu.html">
+            MENU
+        </a>
+
+        <a id='rewards' href="rewards.html">
+            REWARDS
+        </a>
+
+        <a id='card' href="cards.html">
+            GIFT CARDS
+        </a>
+
+        <input id='search' type="text" placeholder="SEARCH">
+
+        <a id="join-now" href="joinnow.html">
+          Join now
+        </a>
+
+        <a id="sign-in"href="signin.html">
+          Sign in
+        </a>
+
+      </nav>
+  </div>
+
+  <!-- MOBILE IMPLEMENTATIONS -->
+  <div id='bar'>
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+<div class='nav2'>
+    <nav>
+      <span>
+        HOME / MENU /
+      </span>
+      <span id='category'>
+      AT HOME COFFEES
+      </span>
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-chevron-up"></i>
+      <section class='drop'>
+      <a href='coffee.html'>COFFEE</a>
+      <a href='tea.html'>TEA</a>
+      <a href='frap.html'>FRAPPUCINO</a>
+      <a href='drinks.html'>OTHER DRINKS</a>
+      <a href='food.html'>FOOD</a>
+      <section>
+    </nav>
+</div>
+
+  <h1>
+    At Home Coffee
+  </h1>
+
+<div class='container'>
+  <!-- Body -->
+  <div id="sidebar">
+    <hr>
+    Whole Bean
+    <i class="fas fa-chevron-down"></i>
+    <i class="fas fa-chevron-up"></i>
+    <div class="control-group drop2">
+        <label class="control control-checkbox">
+          Starbucks Reserve®
+                <input type="checkbox" checked value = ".Starbucks.Reserve®" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Blonde Roast
+                <input type="checkbox" checked value = ".Blonde.Roast" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Medium Roast
+                <input type="checkbox" checked value = ".Medium.Roast" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Dark Roast
+                <input type="checkbox" checked value = ".Dark.Roast" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+    </div>
+    <hr>
+  </div>
+
+  <section id='result'>
+    <div id="results"></div>
+  </section>
+
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav id='footer'>
+    <div id='socials'>
+      <button onclick="window.open('https://open.spotify.com/user/starbucks');">
+        <i class="fab fa-spotify"></i>
+      </button>
+
+      <button onclick="window.open('https://www.facebook.com/Starbucks/');">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+
+      <button onclick="window.open('https://www.pinterest.com/starbucks/');">
+        <i class="fab fa-pinterest-p"></i>
+      </button>
+
+      <button onclick="window.open('https://www.instagram.com/starbucks/');">
+        <i class="fab fa-instagram"></i>
+      </button>
+
+      <button onclick="window.open('https://www.youtube.com/starbucks');">
+        <i class="fab fa-youtube"></i>
+      </button>
+
+      <button onclick="window.open('https://twitter.com/starbucks/');">
+        <i class="fab fa-twitter"></i>
+      </button>
+    </div>
+    <a href="https://www.starbucks.com/about-us/company-information/online-policies/privacy-policy">
+        Privacy Policy
+    </a>
+    <a href="https://www.starbucks.com/about-us/company-information/online-policies/terms-of-use">
+        Terms of Use
+    </a>
+    <a href="https://ideas.starbucks.com/">
+      Submit Your Idea
+    </a>
+    </nav>
+  </footer>
+
+  <script src="athome.js"></script>
+  <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+</body>
+</html>

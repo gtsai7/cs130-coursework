@@ -1,0 +1,192 @@
+<html>
+
+<head>
+    <title>Drinks: Starbucks Coffee Company</title>
+     <link rel="stylesheet" href="drinks.css">
+     <script type="text/javascript" src="drinks.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+
+<body>
+  <!-- FIND A STORE -->
+  <div class="find">
+        <h1>
+            <i class="fas fa-map-marker-alt"></i>
+            <!-- Pin Icon: From Font Awesome Icon -->
+            Find a store
+        </h1>
+  </div>
+
+    <!-- NAVIGATION BAR -->
+  <div class='navtop'>
+      <nav>
+        <img src="../pictures/logo.png" alt="Starbucks Logo">
+        <a id='menu' href="menu.html">
+            MENU
+        </a>
+
+        <a id='rewards' href="rewards.html">
+            REWARDS
+        </a>
+
+        <a id='card' href="cards.html">
+            GIFT CARDS
+        </a>
+
+        <input id='search' type="text" placeholder="SEARCH">
+
+        <a id="join-now" href="joinnow.html">
+          Join now
+        </a>
+
+        <a id="sign-in"href="signin.html">
+          Sign in
+        </a>
+
+      </nav>
+  </div>
+
+  <!-- MOBILE IMPLEMENTATIONS -->
+  <div id='bar'>
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+<div class='nav2'>
+    <nav>
+      <span>
+        HOME / MENU /
+      </span>
+      <span id='category'>
+      OTHER DRINKS
+      </span>
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-chevron-up"></i>
+      <section class='drop'>
+      <a href='coffee.html'>COFFEE</a>
+      <a href='tea.html'>TEA</a>
+      <a href='frap.html'>FRAPPUCINO</a>
+      <a href='food.html'>FOOD</a>
+      <a href='athome.html'>AT HOME COFFEE</a>
+      <section>
+    </nav>
+</div>
+
+  <h1>
+    Other Drinks
+  </h1>
+
+<div class='container'>
+  <!-- Body -->
+  <div id="sidebar">
+    <hr>
+    Hot Drinks
+    <i class="fas fa-chevron-down one"></i>
+    <i class="fas fa-chevron-up one"></i>
+    <div class="control-group drop2 one">
+        <label class="control control-checkbox">
+            Hot Chocolates
+                <input type="checkbox" checked value = ".Hot.Chocolates" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Hot Juice
+                <input type="checkbox" checked value = ".Hot.Juice" class = "checkbox" />
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Steamers
+                <input type="checkbox" checked value = ".Steamers" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+    </div>
+    <hr>
+    Cold Drinks
+    <i class="fas fa-chevron-down two"></i>
+    <i class="fas fa-chevron-up two"></i>
+    <div class="control-group drop2 two">
+        <label class="control control-checkbox">
+           Iced Coconutmilk Drinks
+                <input type="checkbox" checked value = ".Iced.Coconutmilk.Drinks" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Starbucks Refreshers™
+                <input type="checkbox" checked value = ".Starbucks.Refreshers™" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Juice
+                <input type="checkbox" checked value = ".Cold.Juice" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Milk
+                <input type="checkbox" checked value = ".Milk" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Sparkling Water
+                <input type="checkbox" checked value = ".Sparkling.Water" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+        <label class="control control-checkbox">
+            Water
+                <input type="checkbox" checked value = ".Cold.Water" class = "checkbox"/>
+            <div class="control_indicator"></div>
+        </label>
+    </div>
+    <hr>
+  </div>
+
+  <section id='result'>
+    <div id="results"></div>
+  </section>
+
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav id='footer'>
+    <div id='socials'>
+      <button onclick="window.open('https://open.spotify.com/user/starbucks');">
+        <i class="fab fa-spotify"></i>
+      </button>
+
+      <button onclick="window.open('https://www.facebook.com/Starbucks/');">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+
+      <button onclick="window.open('https://www.pinterest.com/starbucks/');">
+        <i class="fab fa-pinterest-p"></i>
+      </button>
+
+      <button onclick="window.open('https://www.instagram.com/starbucks/');">
+        <i class="fab fa-instagram"></i>
+      </button>
+
+      <button onclick="window.open('https://www.youtube.com/starbucks');">
+        <i class="fab fa-youtube"></i>
+      </button>
+
+      <button onclick="window.open('https://twitter.com/starbucks/');">
+        <i class="fab fa-twitter"></i>
+      </button>
+    </div>
+    <a href="https://www.starbucks.com/about-us/company-information/online-policies/privacy-policy">
+        Privacy Policy
+    </a>
+    <a href="https://www.starbucks.com/about-us/company-information/online-policies/terms-of-use">
+        Terms of Use
+    </a>
+    <a href="https://ideas.starbucks.com/">
+      Submit Your Idea
+    </a>
+    </nav>
+  </footer>
+
+  <script src="drinks.js"></script>
+  <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+</body>
+</html>
