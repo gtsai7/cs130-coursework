@@ -13,5 +13,15 @@
     "calories": 999,
     "sugar": "999g",
     "fat": "yes"
+  },
+  "2123194": {
+    "calories": 400,
+    "sugar": "5g",
+    "fat": "19g"
+  },
+  "2123189": {
+    "calories": 150,
+    "sugar": "20g",
+    "fat": "10g"
   }
 }

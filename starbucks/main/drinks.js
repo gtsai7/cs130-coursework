@@ -2,17 +2,44 @@ url =
 "https://s3-us-west-2.amazonaws.com/s.cdpn.io/316753/starbucks.json";
 
 makeCard = (product) => {
+  //test
   let imageURL = product.assets.thumbnail.large.uri;
   if (!imageURL) {
     imageURL = product.assets.masterImage.uri;
+  }
+  let productNutrition = nutritionInfo[product.productNumber];
+  let calories;
+  if (productNutrition) {
+    calories = productNutrition.calories;
+  }
+  else {
+    calories = "No Data";
+  }
+  let sugar;
+  if (productNutrition) {
+    sugar = productNutrition.sugar;
+  }
+  else {
+    sugar = "No Data";
+  }
+  let fat;
+  if (productNutrition) {
+    fat = productNutrition.fat;
+  }
+  else {
+    fat = "No Data";
   }
   let ret = `
   <div class="card">
   <img src="${imageURL}" />
   <p>${product.name}</p>`;
-  ret +=` <p>${product.availability}</p>`
+  //ret +=` <p>${product.availability}</p>`
   for (const size in product.sizes)
   ret +=` <p>${product.sizes[size].sizeCode}</p>`
+  ret +=` <p>calories: ${calories}</p>`
+  ret +=` <p>sugar: ${sugar}</p>`
+  ret +=` <p>fat: ${fat}</p>`
+
   ret +=` </div>`
   return ret;
 };
@@ -57,10 +84,14 @@ showMerch = (data) => {
 };
 
 // code that actually does the fetch:
-fetch(url)
+fetch("nutrition.json")
 .then((response) => response.json())
-.then(showMerch);
-
+.then(data => {
+  nutritionInfo = data;
+  fetch(url)
+  .then((response) => response.json())
+  .then(showMerch);
+})
 ///////////////////// top bar ///////////////////////
 
 drop = () => {
