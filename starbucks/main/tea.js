@@ -62,9 +62,14 @@ showMerch = (data) => {
 };
 
 // code that actually does the fetch:
-fetch(url)
+fetch("nutrition.json")
 .then((response) => response.json())
-.then(showMerch);
+.then(data => {
+  nutritionInfo = data;
+  fetch(url)
+  .then((response) => response.json())
+  .then(showMerch);
+})
 
 ///////////////////// top bar ///////////////////////
 

@@ -1,6 +1,12 @@
 {
   "406": {
-    "calories": 300,
+    "calories": "150 calories",
+    "sugar": "10g",
+    "fat": "0g"
+  }
+
+  "466": {
+    "calories": "300 calories",
     "sugar": "30g",
     "fat": "10g"
   }
