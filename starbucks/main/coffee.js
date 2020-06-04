@@ -16,14 +16,30 @@ makeCard = (product) => {
   else {
     calories = "No Data";
   }
+  let sugar;
+  if (productNutrition) {
+    sugar = productNutrition.sugar;
+  }
+  else {
+    sugar = "No Data";
+  }
+  let fat;
+  if (productNutrition) {
+    fat = productNutrition.fat;
+  }
+  else {
+    fat = "No Data";
+  }
   let ret = `
   <div class="card">
   <img src="${imageURL}" />
   <p>${product.name}</p>`;
-  ret +=` <p>${product.availability}</p>`
+  //ret +=` <p>${product.availability}</p>`
   for (const size in product.sizes)
   ret +=` <p>${product.sizes[size].sizeCode}</p>`
-  ret +=` <p>"calories = "${calories}</p>`
+  ret +=` <p>calories: ${calories}</p>`
+  ret +=` <p>sugar: ${sugar}</p>`
+  ret +=` <p>fat: ${fat}</p>`
 
   ret +=` </div>`
   return ret;
