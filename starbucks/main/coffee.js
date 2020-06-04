@@ -133,9 +133,9 @@ filter = (ev) => {
   let checked = ev.target.checked;
   console.log(ev.target.value);
   console.log(document.querySelectorAll(ev.target.value));
-  if (ev.target.value === ".Iced.Coffees") {
+  if (ev.target.value.includes("Clover®") && !ev.target.value.includes("Iced")) {
     console.log(ev.target.value);
-     if (checked) {
+    if (checked) {
       document.querySelectorAll(ev.target.value)[2].style.display = 'flex';
       document.querySelectorAll(ev.target.value)[3].style.display = 'flex';
     }
@@ -144,10 +144,9 @@ filter = (ev) => {
       document.querySelectorAll(ev.target.value)[3].style.display = 'none';
     }
   }
-  else
-  if (ev.target.value.includes("Clover®") && !ev.target.value.includes("Iced")) {
+  if (ev.target.value === ".Iced.Coffees") {
     console.log(ev.target.value);
-    if (checked) {
+     if (checked) {
       document.querySelectorAll(ev.target.value)[2].style.display = 'flex';
       document.querySelectorAll(ev.target.value)[3].style.display = 'flex';
     }
