@@ -160,6 +160,7 @@ filter = (ev) => {
 
   }
   else {
+    console.log('vijay2');
     document.querySelectorAll(ev.target.value)[0].style.display = 'none';
     document.querySelectorAll(ev.target.value)[1].style.display = 'none';
   }
