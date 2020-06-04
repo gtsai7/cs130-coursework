@@ -144,7 +144,7 @@ filter = (ev) => {
     }
   }
   if (ev.target.value.includes("Clover®")) {
-    console.log('vijay');
+    console.log(ev.target.value);
     if (checked) {
       document.querySelectorAll(ev.target.value)[2].style.display = 'flex';
       document.querySelectorAll(ev.target.value)[3].style.display = 'flex';
