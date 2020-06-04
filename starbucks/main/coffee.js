@@ -143,7 +143,7 @@ filter = (ev) => {
       document.querySelectorAll(ev.target.value)[3].style.display = 'none';
     }
   }
-  if (ev.target.value.includes("Clover®")) {
+  if (ev.target.value.includes("Clover®") && ev.target.value.includes("Brewed")) {
     console.log('vijay');
     if (checked) {
       document.querySelectorAll(ev.target.value)[2].style.display = 'flex';
@@ -157,7 +157,6 @@ filter = (ev) => {
   if (checked) {
     document.querySelectorAll(ev.target.value)[0].style.display = 'flex';
     document.querySelectorAll(ev.target.value)[1].style.display = 'flex';
-
   }
   else {
     console.log('vijay2');
