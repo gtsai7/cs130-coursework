@@ -143,7 +143,7 @@ filter = (ev) => {
       document.querySelectorAll(ev.target.value)[3].style.display = 'none';
     }
   }
-  if (ev.target.value.includes("Brewed") && !ev.target.value.includes("Clover®")) {
+  if (ev.target.value.includes("Clover®")) {
     if (checked) {
       document.querySelectorAll(ev.target.value)[2].style.display = 'flex';
       document.querySelectorAll(ev.target.value)[3].style.display = 'flex';
