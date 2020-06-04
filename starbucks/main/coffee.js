@@ -133,16 +133,16 @@ filter = (ev) => {
   let checked = ev.target.checked;
   console.log(ev.target.value);
   console.log(document.querySelectorAll(ev.target.value));
-  // if (ev.target.value.includes("Coffees") && !ev.target.value.includes("Americano")) {
-  //   if (checked) {
-  //     document.querySelectorAll(ev.target.value)[2].style.display = 'flex';
-  //     document.querySelectorAll(ev.target.value)[3].style.display = 'flex';
-  //   }
-  //   else {
-  //     document.querySelectorAll(ev.target.value)[2].style.display = 'none';
-  //     document.querySelectorAll(ev.target.value)[3].style.display = 'none';
-  //   }
-  // }
+  if (ev.target.value.includes("Coffees") && !ev.target.value.includes("Americano") && ev.target.value.includes("Iced")) {
+     if (checked) {
+       document.querySelectorAll(ev.target.value)[2].style.display = 'flex';
+      document.querySelectorAll(ev.target.value)[3].style.display = 'flex';
+    }
+    else {
+      document.querySelectorAll(ev.target.value)[2].style.display = 'none';
+      document.querySelectorAll(ev.target.value)[3].style.display = 'none';
+    }
+  }
   if (ev.target.value.includes("Clover®") && !ev.target.value.includes("Iced")) {
     console.log(ev.target.value);
     if (checked) {
