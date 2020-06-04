@@ -23,7 +23,7 @@ makeCard = (product) => {
   ret +=` <p>${product.availability}</p>`
   for (const size in product.sizes)
   ret +=` <p>${product.sizes[size].sizeCode}</p>`
-  ret +=` <p>${calories}</p>`
+  ret +=` <p>"calories = "${calories}</p>`
 
   ret +=` </div>`
   return ret;
