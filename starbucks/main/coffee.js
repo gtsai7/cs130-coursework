@@ -159,7 +159,7 @@ filter = (ev) => {
     document.querySelectorAll(ev.target.value)[1].style.display = 'flex';
   }
   else {
-    console.log('vijay2');
+    console.log(document.querySelectorAll(ev.target.value));
     document.querySelectorAll(ev.target.value)[0].style.display = 'none';
     document.querySelectorAll(ev.target.value)[1].style.display = 'none';
   }
