@@ -144,6 +144,7 @@ filter = (ev) => {
       document.querySelectorAll(ev.target.value)[3].style.display = 'none';
     }
   }
+  else
   if (ev.target.value.includes("Clover®") && !ev.target.value.includes("Iced")) {
     console.log(ev.target.value);
     if (checked) {
@@ -155,6 +156,7 @@ filter = (ev) => {
       document.querySelectorAll(ev.target.value)[3].style.display = 'none';
     }
   }
+  else
   if (checked) {
     document.querySelectorAll(ev.target.value)[0].style.display = 'flex';
     document.querySelectorAll(ev.target.value)[1].style.display = 'flex';
