@@ -159,29 +159,28 @@ filter = (ev) => {
     if (checked) {
       document.querySelectorAll(ev.target.value)[0].style.display = 'flex';
       document.querySelectorAll(ev.target.value)[1].style.display = 'flex';
-
     }
     else {
       document.querySelectorAll(ev.target.value)[0].style.display = 'none';
       document.querySelectorAll(ev.target.value)[1].style.display = 'none';
     }
-    let num = 0;
-    for (checkbox of checkboxes) {
-      if (!checkbox.checked) {
-        num++;
-      }
+  }
+  let num = 0;
+  for (checkbox of checkboxes) {
+    if (!checkbox.checked) {
+      num++;
     }
-    if (num === checkboxes.length) {
-      let headers = document.querySelectorAll('h3');
-      for (head of headers) {
-        head.style.display = 'none';
-      }
+  }
+  if (num === checkboxes.length) {
+    let headers = document.querySelectorAll('h3');
+    for (head of headers) {
+      head.style.display = 'none';
     }
-    else {
-      let headers = document.querySelectorAll('h3');
-      for (head of headers) {
-        head.style.display = 'flex';
-      }
+  }
+  else {
+    let headers = document.querySelectorAll('h3');
+    for (head of headers) {
+      head.style.display = 'flex';
     }
   }
 };
